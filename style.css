@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #333;
+
+    height: 100vh;
+}
+
+ul:nth-child(1){
+    list-style: none;
+}
+
+ul:nth-child(1) > li{
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    
+    border-radius: 3px;
+    box-shadow: 0 0 10px grey;
+
+    margin: 5px;
+}
+
+.facebook{
+    background: url('facebook.svg') #3b5998;
+    background-repeat: no-repeat;
+}
+
+ul:nth-child(1) > li:nth-child(1) > div{
+    background-color: #627aac;
+}
+
+.twitter{
+    background: url('twitter.svg') #00aced;
+    background-repeat: no-repeat;
+}
+
+ul:nth-child(1) > li:nth-child(2) > div{
+    background-color: #7fd5f6;
+}
+
+.instagram{
+    background: url('instagram.svg') #bc2a8d;
+    background-repeat: no-repeat;
+}
+
+ul:nth-child(1) > li:nth-child(3) > div{
+    background-color: #dd94c6;
+}
+
+ul:nth-child(1) > li > div {
+    content: "";
+
+    width: 0;
+    height: 50px;
+
+    border-radius: 3px;
+
+    transition: all 1s ease 0.2s; 
+}
+ul:nth-child(1) > li > div > p{
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+
+    color: #fff;
+    opacity: 0;
+
+    transition: all 1s ease 0.5s;
+}
+ul:nth-child(1) > li:hover > div{
+    width: 180px;
+}
+
+ul:nth-child(1) > li:hover > div > p{
+    opacity: 1;
+}
